@@ -1,0 +1,81 @@
+//main: style.less
+
+/* Core */
+*,*:before,*:after {box-sizing: border-box;}
+
+body {margin: 0;padding: 0}
+.newbody {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    -webkit-font-smoothing: antialiased;
+
+    // background: @def;
+
+    color: @black;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: @black;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+    margin: 0;
+    //font-weight: 700;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+input {
+    border: 0;
+    &:focus {
+        outline: 0;
+    }
+}
+
+*::placeholder {font-family: inherit}
+
+footer {
+    margin-top: auto;
+}
+
+/* LeadCore */
+.container {
+    max-width: 1170px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 10px;
+
+    &--ultimate {
+        max-width: 1250px;
+        width: 100%;
+    }
+}

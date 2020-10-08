@@ -1,0 +1,50 @@
+//main: ../style.less
+
+.btn {
+    padding: 18px 38px;
+    display: inline-block;
+    background: linear-gradient(94.63deg, #5F72BE 0.77%, #9921E8 100%);
+    transition: filter .1s linear; &:hover {
+        filter: brightness(115%);
+    }
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    border-radius: 100px;
+
+    color: #F5F5F5;
+    min-width: 220px;
+    max-width: 300px;
+
+    &--play {
+        display: flex;
+        align-items: center;
+
+        & img {
+            margin-right: 40px;
+        }
+    }
+
+    &--boundar {
+        padding: 12px 30px;
+        min-width: 165px;
+        max-width: 200px;
+
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    &--buy {
+        min-width: 100px;
+        padding: 7px 16px;
+
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 5%;
+    }
+}

@@ -1,0 +1,50 @@
+//main: ../style.less
+
+.slider {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.sliderpos {
+    & svg {
+        width: 20px;
+        height: 20px;
+
+        fill: #7187DD;
+
+        &:hover {
+            fill: @purple;
+        }
+    }
+}
+
+.slides {
+    margin: 0 10px;
+
+    display: flex;
+}
+
+.slider__slide {
+
+    text-align: center;
+    padding: 8px 13px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #999999;
+
+    &:hover {
+        background: linear-gradient(93.58deg, #7187DD 0%, #C78AEF 100%);
+        color: #F5F5F5;
+    }
+
+    &.active {
+        color: #F5F5F5;
+        background: linear-gradient(180deg, #5F72BE 0%, #9921E8 100%);
+    }
+}

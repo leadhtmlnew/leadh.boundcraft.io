@@ -1,0 +1,39 @@
+//main: ../style.less
+
+.header {
+    //background: url('../images/header/boundarcraft-background.jpg') no-repeat;
+   // background-size: cover;
+
+    padding: 14px 0;
+
+    display: flex;
+    align-items: center;
+
+    //position: relative;
+}
+
+
+.header__inner {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__main {
+    position: absolute;
+    top: -9px;
+    left: -155px;
+    
+    z-index: 1;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.header__logo {
+    width: 250px;
+    height: 73px;
+}

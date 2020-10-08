@@ -1,0 +1,45 @@
+//main: ../style.less
+
+.table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    width: 100%;
+}
+
+.tr {
+    background: linear-gradient(180deg, #5F72BE 0%, #9921E8 100%);
+
+    border-collapse: collapse;
+}
+
+.th {
+    &:first-child {
+        border-radius: 30px 0 0px 0px;
+    }
+
+    &:last-child {
+        border-radius: 0 30px 0px 0px;
+    }
+
+    padding: 20px 45px;
+    font-size: 15px;
+    font-weight: 700;
+    
+    color: #f5f5f5;
+}
+
+.table__item {
+    height: 40px;
+}
+
+.td {
+    background: #FDFDFD;
+    border-bottom: 1px solid #C4C4C4;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: @black;
+}
